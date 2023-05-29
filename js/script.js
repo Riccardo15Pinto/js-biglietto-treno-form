@@ -51,13 +51,13 @@ btn.addEventListener("click", function(){
     let discount40 = ((40 / 100) * price);
     
     if(ageUser === "1"){
-        totalprice = price;
+        totalprice = price + " €";
         ticket.innerText = "Biglietto Standard";
     }else if (ageUser === "2"){
-        totalprice = (price - discount20).toFixed(2);
+        totalprice = (price - discount20).toFixed(2) + " €";
         ticket.innerText = "Biglietto Scontato Under 18";   
     }else if (ageUser === "3"){
-        totalprice = (price - discount40).toFixed(2);
+        totalprice = (price - discount40).toFixed(2) + " €";
         ticket.innerText = "Biglietto Scontato Over 65";
     }
     console.log(totalprice);
