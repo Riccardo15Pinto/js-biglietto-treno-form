@@ -16,19 +16,73 @@
     <div class="container">
 
         <div class="card mt-5">
-            
             <div class="card-body">
-                <input type="text" id="name-user" value="">
-                <input type="number" name="" id="distance-user" min="" step="" value="">
-                <select name="scegli il tuo biglietto" id="age-user">
-                    <option value="1">Adulto</option>
-                    <option value="2">Bambino</option>
-                    <option value="3">Over 65</option>
-                </select>
-                <button id="btn"></button>
+                <div class="w-75 m-auto">
+                    <div class="d-flex justify-content-between">
+                        
+                        <div class="m-3">
+                            <h6>Nome Cognome</h6>
+                            <input type="text" id="name-user" value="">
+                        </div>
+                        <div class="m-3">
+                            <h6>KM da Percorrere</h6>
+                            <input type="number" name="" id="distance-user">
+                        </div>
+                        <div class="m-3">
+                            <h6>Fascia d'età</h6>
+                            <select name="" id="age-user">
+                                <option value="1">Adulto</option>
+                                <option value="2">Bambino</option>
+                                <option value="3">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-center m-3">
+                    <button id="btn">Genera</button>
+                    <button id="btn-cancel">Annulla</button>
+                </div>
             </div>
-            <p id="test"></p>
         </div>
+
+        <div class="card d-none" id="card-hidden">
+            <div class="input-group flex-nowrap">
+                <span class="input-group-text w-25">
+                    <div>
+                        <h3>NOME PASSEGGERO</h3>
+                        <span id="client"></span>
+                    </div>
+                </span>
+                <table class="table table-borderless">
+                    <thead>
+                        <tr>
+                            <th scope="col" class="w-35">Offerta</th>
+                            <th scope="col">Carrozza</th>
+                            <th scope="col">Codice CP</th>
+                            <th scope="col" class="w-25">Costo Biglietto</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <span id="ticket"></span>
+                            </th>
+                            <td>
+                                <span id="cabin"></span>
+                            </td>
+                            <td>
+                                <span id="number-cp"></span>
+                            </td>
+                            <td>
+                                <span id="price-ticket"></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+                
+        </div>
+            
     </div>
     <!-- javascript -->
     <script src="js/script.js"></script>
