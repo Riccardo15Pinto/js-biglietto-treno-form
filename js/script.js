@@ -15,7 +15,8 @@ btn.addEventListener("click", function(){
     console.log(distanceUser);
     const ageUser = elementageUser.value;
     console.log(ageUser);
+    const price = (distanceUser * 0.21);
+    console.log(price);
 });
-
 
 
