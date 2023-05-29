@@ -15,22 +15,23 @@
 <body>
     <div class="container">
 
-        <div class="card mt-5">
+        <h1 class="text-center text-white mt-5">CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+        <div class="card mt-5 rounded-4">
             <div class="card-body">
                 <div class="w-75 m-auto">
                     <div class="d-flex justify-content-between">
                         
                         <div class="m-3">
-                            <h6>Nome Cognome</h6>
-                            <input type="text" id="name-user" value="">
+                            <h6 class="text-danger text-center">Nome Cognome</h6>
+                            <input type="text" id="name-user" value="" class="border-danger rounded-pill">
                         </div>
                         <div class="m-3">
-                            <h6>KM da Percorrere</h6>
-                            <input type="number" name="" id="distance-user">
+                            <h6 class="text-danger text-center">KM da Percorrere</h6>
+                            <input type="number" name="" id="distance-user" class="border-danger rounded-pill">
                         </div>
                         <div class="m-3">
-                            <h6>Fascia d'età</h6>
-                            <select name="" id="age-user">
+                            <h6 class="text-danger text-center">Fascia d'età</h6>
+                            <select name="" id="age-user" class="border-danger rounded-pill">
                                 <option value="1">Adulto</option>
                                 <option value="2">Bambino</option>
                                 <option value="3">Over 65</option>
@@ -39,17 +40,21 @@
                     </div>
                 </div>
                 <div class="d-flex justify-content-center m-3">
-                    <button id="btn">Genera</button>
-                    <button id="btn-cancel">Annulla</button>
+                    <button id="btn" class="btn btn-light border border-danger text-danger me-4 ">Genera</button>
+                    <button id="btn-cancel" class="btn btn-light border border-danger text-danger ms-4 ">Annulla</button>
                 </div>
             </div>
         </div>
 
-        <div class="card d-none" id="card-hidden">
-            <div class="input-group flex-nowrap">
-                <span class="input-group-text w-25">
-                    <div>
-                        <h3>NOME PASSEGGERO</h3>
+        
+        <div class="card mt-5 d-non p-5" id="card-hidden">
+            <h2 class="text-center">IL TUO BIGLIETTO</h2>
+            <h3>DETTAGLIO PASSEGGERO:</h3>
+            <div class="card">
+                <div class="input-group flex-nowrap">
+                    <span class="input-group-text w-25">
+                        <div>
+                            <h4>NOME PASSEGGERO</h4>
                         <span id="client"></span>
                     </div>
                 </span>
@@ -62,6 +67,18 @@
                             <th scope="col" class="w-25">Costo Biglietto</th>
                         </tr>
                     </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                            </th>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                            <td>
+                            </td>
+                        </tr>
+                    </tbody>
                     <tbody>
                         <tr>
                             <th scope="row">
@@ -81,7 +98,9 @@
                 </table>
             </div>
                 
+            </div>
         </div>
+
             
     </div>
     <!-- javascript -->
