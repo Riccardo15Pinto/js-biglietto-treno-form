@@ -1,10 +1,21 @@
 console.log('ok js')
 
-const nameUser = document.getElementById("name-user").addEventListener("input", () => console.log(document.getElementById("name-user").value));
+const elementnameUser = document.getElementById("name-user");
 
-const distanceUser = document.getElementById("distance-user").addEventListener("change" , () => console.log(document.getElementById("distance-user").value));
+const elementageUser = document.getElementById("age-user");
 
-const ageUser = document.getElementById("age-user").addEventListener("input", () => console.log(document.getElementById("age-user").value));
+const elementdistanceUser = document.getElementById("distance-user");
+
+const btn = document.getElementById("btn");
+
+btn.addEventListener("click", function(){
+    const nameUser = elementnameUser.value;
+    console.log(nameUser);
+    const distanceUser = parseInt(elementdistanceUser.value);
+    console.log(distanceUser);
+    const ageUser = elementageUser.value;
+    console.log(ageUser);
+});
 
 
 
